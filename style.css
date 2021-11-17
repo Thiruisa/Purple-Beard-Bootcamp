@@ -17,10 +17,29 @@ body{
 	font-size: 14px;
 	text-align: center;
 	padding: 0.5em;
-	/* transform:translateX(100%);
-	animation: scroll-left 15s linear infinite; */
-
 }
+
+.warning p{
+	/* Starting position */
+	-moz-transform:translateX(100%);
+	-webkit-transform:translateX(100%);  
+	transform:translateX(100%);
+	/* Apply animation to this element */  
+	-moz-animation: warning 35s linear infinite;
+	-webkit-animation: warning 35s linear infinite;
+	animation: warning 35s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes warning {
+0%   { -moz-transform: translateX(100%); }
+100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes warning {
+0%   { -webkit-transform: translateX(100%); }
+100% { -webkit-transform: translateX(-100%); }
+}
+
+
 
 /* nav bar */
 .navbar{
@@ -109,6 +128,6 @@ nav ul li:hover{
 }
 
 .banner-text p{
-	
+
 }
 /* ***************************************** */
