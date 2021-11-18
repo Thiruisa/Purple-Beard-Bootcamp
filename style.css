@@ -103,9 +103,10 @@ nav ul li:hover{
 
 .banner-promo{
 	position: relative;
-	left: 50%;
-	top: 5%;
-	border-radius: 1px solid black;
+	display: block;
+	top: 100px;
+	margin: 0px 40% 0px 60%;
+	border: 1px solid black;
 	box-shadow: 0px 10px 8px 5px black;
 	transition: 0.3s ease-in-out;
 }
@@ -117,7 +118,7 @@ nav ul li:hover{
 .banner-text{
 	position: relative;
 	float: right;
-	top: 55%;
+	top: 200px;
 	text-align: center;
 	margin-right: 5%;
 	color: brown;
@@ -128,6 +129,252 @@ nav ul li:hover{
 }
 
 .banner-text p{
-
+	font-size: 1.25em;
+	text-transform: capitalize;
 }
 /* ***************************************** */
+
+
+/* ***************************************** */
+/* Order section */
+
+.order{
+	position: relative;
+	width: 600px;
+	top: 250px;
+	margin: auto;
+
+	border: 1px solid black;
+	background-color: white;
+	box-shadow: 0px 10px 8px 5px rgba(0, 0, 0, 0.4);
+
+	font-size: 15px;
+	padding: 1em;
+}
+
+.order h1{
+	color: brown;
+	margin-bottom: 0.5em;
+}
+
+.order form{
+	border: 1px solid black;
+	width: 100%;
+	padding: 1em 0;
+}
+
+.order form input[type = 'text']{
+	width: 60%;
+	border: 1px solid lightgray;
+	border-radius: 5px 0 0 5px;
+	margin-left: 10px;
+	margin-right: 0px;
+}
+
+.order form input[type = 'text'] ::placeholder{
+	font-weight: bold;
+	color: lightgray;
+}
+
+.order form input[type = 'text'],
+.order button{
+	padding: 1em;
+	font-weight: bold;
+}
+
+.order button{
+	background-color: green;
+	color: white;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	margin: none;
+	cursor: pointer;
+}
+
+/* ***************************************** */
+
+
+
+
+
+
+
+
+
+/* ***************************************** */
+/* IPAD  */
+/* ***************************************** */
+@media screen and (max-width: 800px){
+	.warning{
+		background-color: black;
+		color: white;
+		font-size: 14px;
+		text-align: center;
+		padding: 0.5em;
+	}
+	
+	.warning p{
+		/* Starting position */
+		-moz-transform:translateX(100%);
+		-webkit-transform:translateX(100%);  
+		transform:translateX(100%);
+		/* Apply animation to this element */  
+		-moz-animation: warning 35s linear infinite;
+		-webkit-animation: warning 35s linear infinite;
+		animation: warning 35s linear infinite;
+	}
+	/* Move it (define the animation) */
+	@-moz-keyframes warning {
+	0%   { -moz-transform: translateX(100%); }
+	100% { -moz-transform: translateX(-100%); }
+	}
+	@-webkit-keyframes warning {
+	0%   { -webkit-transform: translateX(100%); }
+	100% { -webkit-transform: translateX(-100%); }
+	}
+	
+	
+	
+	/* nav bar */
+	.navbar{
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		align-items: center;
+		width: 100vw;
+		height: 6vh;
+	}
+	
+	#nav-left{
+		margin-left: 1rem;
+	}
+	
+	#nav-right{
+		margin-right: 4rem;
+	}
+	
+	#nav-middle{
+		display: flex;
+	}
+	
+	nav ul li{
+		background-color: coral;
+		margin: 0px 2rem;
+		padding: 8px 15px;
+		border: 1px solid transparent;
+		min-width: 100px;
+		border-radius: 10px;
+		text-align: center;
+		list-style-type: none;
+		transition: 0.3s ease-in-out;
+		cursor: pointer;
+	}
+	
+	nav ul li a{
+		text-decoration: none;
+		color: white;
+		font-weight: bold;
+	}
+	
+	nav ul li:hover{
+		border: 2px solid tomato;
+		transform: scale(1.1);
+		box-shadow: 2px 1px 10px -2px #888888;
+	}
+	
+	/* ***************************************** */
+	
+	
+	/* ***************************************** */
+	
+	/* banner */
+	.banner{
+		background-image: url('./images/Lesson_6-0.jpg');
+		background-size: cover;
+		height: 70vh;
+		width: 100vw;
+	}
+	
+	.banner-promo{
+		display: none;
+	}
+	
+	.banner-promo:hover{
+		transform: scale(1.1);
+	}
+	
+	.banner-text{
+		position: relative;
+		float: right;
+		top: 200px;
+		text-align: center;
+		margin-right: 5%;
+		color: brown;
+	}
+	
+	.banner-text h1{
+		font-size: 2em;
+	}
+	
+	.banner-text p{
+		font-size: 1.25em;
+		text-transform: capitalize;
+	}
+	/* ***************************************** */
+	
+	
+	/* ***************************************** */
+	/* Order section */
+	
+	.order{
+		position: relative;
+		width: 100vw;
+		top: 680px;
+		margin: auto;
+	
+		border: 1px solid black;
+		background-color: white;
+	
+		font-size: 15px;
+		padding: 1em;
+	}
+	
+	.order h1{
+		color: brown;
+		margin-bottom: 0.5em;
+	}
+	
+	.order form{
+		border: 1px solid black;
+		width: 100%;
+		padding: 1em 0;
+	}
+	
+	.order form input[type = 'text']{
+		width: 60%;
+		border: 1px solid lightgray;
+		border-radius: 5px 0 0 5px;
+		margin-left: 10px;
+		margin-right: 0px;
+	}
+	
+	.order form input[type = 'text'] ::placeholder{
+		font-weight: bold;
+		color: lightgray;
+	}
+	
+	.order form input[type = 'text'],
+	.order button{
+		padding: 1em;
+		font-weight: bold;
+	}
+	
+	.order button{
+		background-color: green;
+		color: white;
+		border: none;
+		border-radius: 0 5px 5px 0;
+		margin: none;
+		cursor: pointer;
+	}
+}
