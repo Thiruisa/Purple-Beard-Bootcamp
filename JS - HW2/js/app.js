@@ -2,7 +2,7 @@
 
 // Display the current date
 function todayDate(){
-    let dateVar;
+    const dateVar;
     // current date
     dateVar = new Date();
     // alert with todays date will appear with button is clicked
